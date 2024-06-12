@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by gracccerbyooo (http://jsbin.com/fuqebel/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+<style id="jsbin-css">
+</style>
+
+</style>
+<style id="jsbin-css">
+:root {
+  --accent-color: #ff0000; 
+  --text-color: #f0f4f5;
+  --background-color: #0b002b;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 8px 12px;
+}
+
+.nav_logo {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.nav_logo i {
+  color: var(--accent-color);
+}
+
+.nav_logo span {
+  color: var(--accent-color);
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav_menu li {
+  padding: 8px 12px;
+}
+
+.nav_menu li:hover {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.nav_menu li a:hover {
+  color: var(--background-color);
+}
+
+.nav_icons {
+  display: flex;
+  color: #7dc0ff;
+  list-style: none;
+  padding-left: 0;
+}
+
+.movie-hero {
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    
+}
+
+.movie-poster {
+    width: 380px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 22px;
+}
+
+p class {
+     font-size: 22px;
+}
+.movie-image {
+    width: 380px;
+    border-radius: 10px;
+}
+
+.movie-details {
+    margin-left: 20px;
+}
+
+.movie-details h1, .movie-details h2 {
+    margin-bottom: 10px;
+}
+
+.movie-title-ko {
+    font-size: 40px;
+    color: var(--accent-color);
+}
+
+.movie-title-en {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.movie-description {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.movie-details p {
+    margin-bottom: 10px;
+}
+
+.cast-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cast-member {
+    text-align: center;
+    flex: 1 1 calc(25% - 30px);
+    margin: 8px;
+    font-weight: bold;
+}
+
+.cast-member img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cast-member p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.related-videos, .ticket-info, .cast, .footer {
+    padding: 20px;
+    background-color: black; 
+    text-align: center;
+    
+}
+
+.related-videos h2, .ticket-info h2, .cast h2, .footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .video {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .music-play-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .music-play-image {
+            width: 50px; /* 원하는 크기로 조정하세요 */
+            height: 50px; /* 원하는 크기로 조정하세요 */
+            cursor: pointer;
+            object-fit: cover; /* 이미지 비율 유지하면서 크기 조정 */
+        }
+
+        .music-play-image:hover {
+            opacity: 0.7;
+        }
+
+.ticket-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #FF0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black; 
+    color: white;
+    text-align: center;
+    padding: 20px; 
+}
+
+  .details, .cast, .trailer, .ticket-info {
+    border-top: none;
+
+</style>
+</head>
+<body>
+     <nav class="navbar">
+      <div class="nav_logo">
+       <a href="#" class="home-icon"><img src="https://i.imgur.com/MruF48m.png" alt="Home" style="width: 180px; height: 60px;"></a>
+      </div>
+        <ul class="nav_menu">
+            <li><a href="https://emilykwon.github.io/start/">홈</a></li>
+            <li><a href="https://emilykwon.github.io/emilk/">영화</a></li>
+            <li><a href="https://yeonjoo97.github.io/dramaaa/">드라마</a></li>
+            <li><a href="https://gracccerbyooo.github.io/ani/">애니메이션</a></li>
+            <li><a href="https://gracccerbyooo.github.io/musical2/">뮤지컬</a></li>
+        </ul>
+    </nav>
+
+  <section class="movie-hero">
+        <img src="https://i.imgur.com/imsAvor.jpeg" alt="Movie Poster" class="movie-poster">
+        <div class="movie-details">
+            <h1 class="movie-title-ko">시카고 CHICAGO</h1>
+            <p><strong>개봉:</strong> 2000년</p>
+            <p><strong>등급:</strong> 14세 이상 관람가</p>
+            <p><strong>장르:</strong> 뮤지컬, 범죄, 드라마, 시대극</p>
+            <p><strong>국가:</strong> 대한민국</p>
+            <p><strong>러닝타임:</strong> 145분 (인터미션 20분 포함)</p>
+            <p><strong>배급:</strong> 코리아 픽쳐스</p>
+            <p><Strong>연출:</strong> 타냐 나디니 (Tania Nardini)</p>
+            <p class="movie-description">
+                <strong>줄거리:</strong> 1920년대 미국을 배경으로, 남편과 불륜을 저지른 여동생을 살해한 '벨마 켈리'와 불륜남을 살해한 혐의로 수감된 '록시 하트'가 유명 가수로 거듭나는 이야기를 그린다.
+            </p>
+            <p><strong>등장인물:</strong> 최정원, 최재림, 김영주 등</p>
+        </div>
+    </section>
+  
+  <section class="cast">
+    <h2>등장인물</h2>
+    <div class="cast-list">
+        <div class="cast-member">
+            <img src="https://i.imgur.com/VA4Z1yn.png" alt="벨마 켈리">
+            <p>벨마 켈리</p>
+        </div>
+        <div class="cast-member">
+            <img src="https://i.imgur.com/t8Jur17.png" alt="록시 하트">
+            <p>록시 하트</p>
+        </div>
+        <div class="cast-member">
+            <img src="https://i.imgur.com/IzWmnei.png" alt="빌리 플린">
+            <p>빌리 플린</p>
+      </div>
+    </div>
+</section>
+
+    <section class="related-videos">
+        <h2>예고편</h2>
+        <div class="video-container">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/36hshluncms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="ticket-info">
+        <h2>티켓 정보</h2>
+        <p>공연일자: 2024년 6월 7일(금) ~ 2024년 9월 29일(일)</p>
+        <p>공연시간: 화-금 7시 30분 / 토-일 2시, 6시30분/ 월 공연 없음</p>
+        <p>티켓가격: VIP석 16만원 / OP석 15만원 / R석 14만원 / S석 11만원 / A석 8만원</p>
+        <p>관람장소: 디큐브 링크아트센터</p>
+        <a href="https://tickets.interpark.com/goods/24005266" class="ticket-link" target="_blank">티켓 예매하기</a>
+    </section>
+
+       <section class="movie-hero">
+        <img src="https://i.imgur.com/dzl5O9f.jpeg" alt="영웅 이미지" class="movie-image">
+        <div class="movie-details">
+            <h1 class="movie-title-ko">영웅 HERO</h1>
+            <p><strong>개봉:</strong> 2009년</p>
+            <p><strong>등급:</strong> 초등학생 이상 관람가(2017년생 포함, 이전 출생자 관람 가능)</p>
+            <p><strong>장르:</strong> 액션, 모험, SF</p>
+            <p><strong>국가:</strong> 대한민국</p>
+            <p><strong>러닝타임:</strong> 160분 (인터미션 20분 포함)</p>
+            <p><strong>배급:</strong> ACOM</p>
+          <p><Strong>연출:</strong> 윤홍선</p>
+            <p class="movie-description">
+                <strong>줄거리:</strong> 독립운동가 안중근 의사가 1909년 중국 하얼빈에서 이토 히로부미를 사살한 뒤 사형 판결을 받아 순국하기까지 일 년을 그린 작품입니다.
+            </p>
+            <p><strong>등장인물:</strong>  정성화, 양준모, 민우혁, 김도형, 서영주, 이정열 등</p>
+        </div>
+    </section>
+  
+  <section class="cast">
+    <h2>등장인물</h2>
+    <div class="cast-list">
+        <div class="cast-member">
+            <img src="https://i.imgur.com/UYSe9cy.png" alt="안중근">
+            <p>안중근</p>
+        </div>
+        <div class="cast-member">
+            <img src="https://i.imgur.com/3Uvb706.png" alt="이토 히로부미">
+            <p>이토 히로부미</p>
+        </div>
+        <div class="cast-member">
+            <img src="https://i.imgur.com/Y24zLns.png" alt="설희">
+            <p>설희</p>
+        </div>
+    </div>
+</section>
+
+    <section class="related-videos">
+        <h2>예고편</h2>
+        <div class="video-container">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dmU7MFSVvzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="ticket-info">
+        <h2>티켓 정보</h2>
+        <p>공연일자: 2024년 5월 29일(수) ~ 2024년 8월 11일(일)</p>
+        <p>공연시간: 화-금 7시 30분 / 수 3시, 7시 30분 / 토-일 2시, 6시30분 / 월 공연 없음</p>
+        <p>티켓가격: VIP석 16만원 / R석 14만원 / S석 10만원 / A석 8만원</p>
+        <p>관람장소: 세종문화회관 대극장</p>
+        <a href="https://tickets.interpark.com/goods/P0003831" class="ticket-link" target="_blank">티켓 예매하기</a>
+    </section>
+      
+     <footer>
+        <p>© 2024 KAYWON OTT 문지연All rights reserved.</p>
+    </footer>
+<script id="jsbin-javascript">
+<script>
+document.querySelector('.music-play-button').addEventListener('click', function() {
+    var audio = document.getElementById('musical-song');
+    audio.play();
+});
+<\/script>
+
+</script>
+</body>
+</html>
